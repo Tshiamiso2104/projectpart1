@@ -9,11 +9,20 @@ public class ProjectPartOne {
     String LastName;
     
    // Username check 
+   //Username should meet given requirements
+   //Should contain an underscore
+   //Not longer than five characters
+    
     boolean checkUsername (String username){
         return username.contains("_") && username.length() <=5;
     }
     
     // Password check
+    //Should meet the complexity rules
+    //Should be at least eight characters long
+    //Should contain a capital letter
+    //Should contain a number
+    //Should contain a special character
     boolean checkPasswordComplexity (String Password){
     if (Password.length() >= 8 && Password.matches(".*\\d.*") && Password.matches(".*[A-Z].*") && Password.matches(".*[^a-zA-Z0-9].*")){
         return true;
@@ -24,6 +33,9 @@ public class ProjectPartOne {
     }
     
     // Phone number check
+    //Sould meet the requirements
+    //Contains an international code
+    //Number should be ten characters long
     boolean checkCellPhoneNumber (String PhoneNumber){
         return PhoneNumber.matches("^\\+27[0-9]{9}$");
     }
