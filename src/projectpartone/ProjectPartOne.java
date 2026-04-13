@@ -7,6 +7,7 @@ public class ProjectPartOne {
     String storedPassword;
     String FirstName;
     String LastName;
+    String PhoneNumber;
     
    // Username check 
    //Username should meet given requirements
